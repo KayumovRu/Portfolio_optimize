@@ -1,13 +1,15 @@
 
 
-Сервис по дипломному проекту https://github.com/KayumovRu/Portfolio_optimize
+Сервис по дипломному проекту - https://github.com/KayumovRu/RL-invest-optimization
 
-Серверная часть на FastAPI
-Фрондент на Streamlit
+- Серверная часть на FastAPI
+- Фрондент на Streamlit
 
 Что делает сервис на данный момент:
 - по предобученной модели определяет, на какую сумму надо купить активы портфеля
 - пользователь передает через поле размер депозита
+
+<img src='demo.png'>
 
 (сервис улучшается)
 
@@ -39,8 +41,8 @@ python3 -m uvicorn main:app --reload
 
 **STREAMLIT (фронтенд)**
 
-В другом терминале в
-~/portfolio_optimize/front$
+В другом терминале заходим в
+~/portfolio_optimize/frontend$
 
 и выполняем
 

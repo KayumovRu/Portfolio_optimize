@@ -1,18 +1,18 @@
-import streamlit
+import streamlit as st
 import requests
 
 def run():
-    streamlit.title("Portfolio Optimization")
-    depo = streamlit.number_input("Deposit")
+    st.title("Portfolio Optimization")
+    depo = st.number_input("Deposit")
     
     data = {
         'deposit': depo
         }
     
-    if streamlit.button("Optimize"):
+    if st.button("Optimize"):
         response = requests.post("http://127.0.0.1:8000/optimize", json=data)
         portfolio = response.text
-        streamlit.success(f"Portfolio: {portfolio}")
+        st.success(f"Portfolio: {portfolio}")
     
 if __name__ == '__main__':
     run()

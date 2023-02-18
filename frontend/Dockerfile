@@ -1,14 +1,14 @@
 FROM python:3.7-slim
 
-RUN mkdir /front
+RUN mkdir /frontend
 
-COPY requirements.txt /front
+COPY requirements.txt /frontend
 
-WORKDIR /front
+WORKDIR /frontend
 
 RUN pip install -r requirements.txt
 
-COPY . /front
+COPY . /frontend
 
 EXPOSE 8501
 
