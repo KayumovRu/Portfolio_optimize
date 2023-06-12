@@ -50,9 +50,11 @@ docker-compose up
 
 После загрузки создать файл, добавить в него:
 
+```
 [passwords]
 demo = "demo"
 admin = "12345"
+```
 
 В одном терминале переходим в папку 
 ~/portfolio_optimize/fastapi$
