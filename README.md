@@ -54,7 +54,6 @@ docker-compose up
 ```
 
 Перейти на http://localhost:8501
-Вбить депозит, нажать Optimize
 
 
 ## ====== Для запуска вручную
